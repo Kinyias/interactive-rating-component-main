@@ -1,0 +1,118 @@
+@import 'variable';
+
+.card{
+    max-width: 38rem;
+    width: 100%;
+    background-color: $Dark-Blue ;
+    padding: 3rem;
+    border-radius: 20px;
+    &-star{
+        background-color: $Medium-Grey;
+        width: 4.3rem;
+        height: 4.3rem;
+        padding: 1rem;
+        border-radius: 999px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 3rem;
+        img{
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+    }
+    &-content{
+        h1{
+            font-size: 2.3rem;
+            margin: 1rem 0;
+        }
+        p{
+            color: $Light-Grey;
+            font-size: 1.4rem;
+            line-height: 2.2rem;
+        }
+    }
+    .active{
+        background-color: $Light-Grey;
+        color: $White;
+    }
+    &-rating{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 3rem 0;
+        &-number{
+            background-color: $Medium-Grey;
+            color: $Light-Grey;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 700;
+            font-size: 1.4rem;
+            width: 5rem;
+            height: 5rem;
+            border-radius: 999px;
+            cursor: pointer;
+            transition: .3s;
+        }
+        &-number:hover{
+            background-color: $Orange;
+            color: $White;
+        }
+    }
+    &-submit{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .btn-submit{
+            background-color: $Orange;
+            color: $White;
+            padding: 1.3rem;
+            width: 100%;
+            border-radius: 20px;
+            font-weight: 700;
+            letter-spacing: 0.2rem;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: .3s;
+        }
+        .btn-submit:hover{
+            background-color: $White;
+            color: $Orange;
+        }
+    }
+    //card 2 thank you
+    .card-2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .result{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            &-rating{
+                color: $Orange;
+                background-color: $Medium-Grey;
+                padding: 0.5rem 2rem;
+                border-radius: 20px;
+                margin: 2rem 0;
+            }
+            h1{
+                font-size: 2.5rem;
+                line-height: 4rem;
+            }
+            .text{
+                text-align: center;
+                color: $Light-Grey;
+                margin: 1rem 0;
+            }
+        }
+    }
+    .hidden{
+        display: none;
+    }
+}

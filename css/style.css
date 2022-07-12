@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 15px;
+  font-family: "Overpass", sans-serif;
+  color: hsl(0deg, 0%, 100%);
+  min-height: 100vh;
+  background-color: hsl(216deg, 12%, 8%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  font-family: "Overpass", sans-serif;
+  border: none;
+}
+
+.card {
+  max-width: 38rem;
+  width: 100%;
+  background-color: hsla(213deg, 19%, 18%, 0.6);
+  padding: 3rem;
+  border-radius: 20px;
+}
+.card-star {
+  background-color: hsla(216deg, 12%, 54%, 0.1);
+  width: 4.3rem;
+  height: 4.3rem;
+  padding: 1rem;
+  border-radius: 999px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+.card-star img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.card-content h1 {
+  font-size: 2.3rem;
+  margin: 1rem 0;
+}
+.card-content p {
+  color: hsla(217deg, 12%, 63%, 0.7);
+  font-size: 1.4rem;
+  line-height: 2.2rem;
+}
+.card .active {
+  background-color: hsla(217deg, 12%, 63%, 0.7);
+  color: hsl(0deg, 0%, 100%);
+}
+.card-rating {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 3rem 0;
+}
+.card-rating-number {
+  background-color: hsla(216deg, 12%, 54%, 0.1);
+  color: hsla(217deg, 12%, 63%, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 1.4rem;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.card-rating-number:hover {
+  background-color: hsl(25deg, 97%, 53%);
+  color: hsl(0deg, 0%, 100%);
+}
+.card-submit {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-submit .btn-submit {
+  background-color: hsl(25deg, 97%, 53%);
+  color: hsl(0deg, 0%, 100%);
+  padding: 1.3rem;
+  width: 100%;
+  border-radius: 20px;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.card-submit .btn-submit:hover {
+  background-color: hsl(0deg, 0%, 100%);
+  color: hsl(25deg, 97%, 53%);
+}
+.card .card-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.card .card-2 .result {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.card .card-2 .result-rating {
+  color: hsl(25deg, 97%, 53%);
+  background-color: hsla(216deg, 12%, 54%, 0.1);
+  padding: 0.5rem 2rem;
+  border-radius: 20px;
+  margin: 2rem 0;
+}
+.card .card-2 .result h1 {
+  font-size: 2.5rem;
+  line-height: 4rem;
+}
+.card .card-2 .result .text {
+  text-align: center;
+  color: hsla(217deg, 12%, 63%, 0.7);
+  margin: 1rem 0;
+}
+.card .hidden {
+  display: none;
+}
+
+/*# sourceMappingURL=style.css.map */
